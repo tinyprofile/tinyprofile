@@ -1,0 +1,143 @@
+.profile-wrapper {
+    background-color: white;
+
+    .inner-wrapper {
+        min-width: 800px;
+        max-width: 1000px;
+        display: flex;
+        margin: auto;
+        min-height: 200px;
+    }
+
+    .left-col {
+        order: 0;
+        width: 33%;
+    }
+
+    .right-col {
+        order: 1;
+        width: 67%;
+    }
+
+    .top-drawer, .bottom-drawer {
+        padding: 25px 50px;
+        position: relative;
+    }
+
+    .top-drawer {
+        background-color: #f43192;
+    }
+
+    .bottom-drawer {
+        background-color: white;
+    }
+
+    .avatar {
+        background: white;
+        border-radius: 100%;
+        border: 4px solid white;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        bottom: -100px;
+        z-index: 999;
+
+        img {
+            border-radius: 100%;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    }
+
+    .name-headline {
+        color: white;
+        position: absolute;
+        bottom: 0;
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    .social-links {
+        margin-bottom: 20px;
+
+        a {
+            margin-right: 5px;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .aux-links {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .profile-wrapper {
+    
+        .inner-wrapper {
+            min-width: auto;
+            max-width: auto;
+            flex-direction: column;
+            margin: auto;
+            min-height: auto;
+        }
+    
+        .left-col {
+            order: 0;
+            width: 100%;
+        }
+    
+        .right-col {
+            order: 1;
+            width: 100%;
+        }
+    
+        .top-drawer, .bottom-drawer {
+            padding: 25px 40px;
+            position: relative;
+        }
+    
+        .top-drawer {
+            padding-top: 40px;
+        }
+        
+        .avatar {
+            height: 70%;
+            position: relative;
+            bottom: auto;
+            margin: auto;
+
+            &:after {
+                content: "";
+                display: block;
+                padding-bottom: 100%;
+            }
+        }
+    
+        .name-headline {
+            position: relative;
+            bottom: 0;
+            text-align: center;
+            h1 {
+                font-size: 40px;
+            }
+        }
+    
+        .social-links {
+            margin-bottom: 20px;
+    
+            a {
+                margin-right: 5px;
+            }
+    
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

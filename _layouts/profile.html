@@ -1,0 +1,103 @@
+---
+layout: master
+---
+
+<!-- need this if a page is designated as index so it can find it's files -->
+{% assign media_url_prefix = "" %}
+{% if page.url == "/" %}
+    {% assign media_url_prefix = "/" | append: page.path | remove: "index.html" %}
+{% endif %}
+
+<!-- OVERRIDE STYLES -->
+<style>
+    .top-drawer {
+        {% if page.primary_color %}
+        background-color: {{ page.primary_color }} !important;
+        {% endif %}
+        {% if page.header_image %}
+        background-image: url({{ media_url_prefix }}{{ page.header_image }}) !important;
+        background-position: center;
+        background-size: cover;
+        {% endif %}
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        {% if page.primary_color %}
+        color: {{ page.primary_color }} !important;
+        {% endif %}
+    }
+</style>
+
+<div class="profile-wrapper">
+    <section class="top-drawer">
+        <div class="inner-wrapper">
+            <div class='left-col'>
+                <div class="avatar">
+                    <img src="{{ media_url_prefix }}profile.jpg"/>
+                </div>
+            </div> 
+            <div class="right-col">
+                <div class="name-headline">
+                    <h1>{{ page.profile_name }}</h1>
+                </div>
+            </div> 
+        </div>      
+    </section>
+    <section class="bottom-drawer">
+        <div class="inner-wrapper">
+            <div class='left-col'></div> 
+            <div class="right-col">
+                <div class="social-links">
+                    {% if page.email %}
+                    <a href="mailto:{{ page.email }}">
+                        {% include social/email.svg %}
+                    </a>
+                    {% endif %}
+                    {% if page.twitter %}
+                    <a href="https://www.twitter.com/{{ page.twitter }}">
+                        {% include social/twitter.svg %}
+                    </a>
+                    {% endif %}
+                    {% if page.facebook %}
+                    <a href="https://www.facebook.com/{{ page.facebook }}">
+                        {% include social/facebook.svg %}
+                    </a>
+                    {% endif %}
+                    {% if page.linkedin %}
+                    <a href="https://www.linkedin.com/in/{{ page.linkedin }}">
+                        {% include social/linkedin.svg %}
+                    </a>
+                    {% endif %}
+                    {% if page.github %}
+                    <a href="https://github.com/{{ page.github }}">
+                        {% include social/github.svg %}
+                    </a>
+                    {% endif %}
+                    {% if page.medium %}
+                    <a href="https://medium.com/@{{ page.medium }}">
+                        {% include social/medium.svg %}
+                    </a>
+                    {% endif %}
+                    {% if page.behance %}
+                    <a href="https://www.behance.net/{{ page.behance }}">
+                        {% include social/behance.svg %}
+                    </a>
+                    {% endif %}
+                    {% if page.tumblr %}
+                    <a href="https://{{ page.tumblr }}.tumblr.com/">
+                        {% include social/tumblr.svg %}
+                    </a>
+                    {% endif %}
+                    {% if page.youtube %}
+                    <a href="https://www.youtube.com/user/{{ page.youtube }}">
+                        {% include social/youtube.svg %}
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="profile-description">
+                    {{ page.content }}
+                </div>
+            </div> 
+        </div> 
+    </section>
+</div>

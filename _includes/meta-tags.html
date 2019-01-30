@@ -1,0 +1,28 @@
+{% assign page_title = site.title %}
+{% if page.layout == "artwork" %}
+    {% assign page_title = page.title | append: " / " | append: page.media | append: " / " | append: page.dimension | append: " / " | append: site.name | escape %}
+{% endif %}
+
+{% assign social_image = "" | append: site.url | append: page.url %}
+{% if page.profile_image %}
+    {% assign social_image = social_image | append: page.profile_image %}
+{% else %}
+    {% assign social_image = social_image | append: "profile.jpg" %}
+{% endif %}
+
+<title>{{ page.profile_name }}</title>
+<meta name="description" content="{{ page.seo_description }}" />
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="{{ site.url }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+
+<meta property="og:title" content="{{ page_title }}" />
+<meta property="og:description" content="{{ page.seo_description }}" />
+
+<meta property="og:image" content="{{ social_image }}">
+<meta name="twitter:image" content="{{ social_image }}">
+
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page.seo_description }}">
+<meta name="twitter:card" content="summary_large_image">
