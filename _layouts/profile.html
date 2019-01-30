@@ -2,10 +2,10 @@
 layout: master
 ---
 
-<!-- need this if a page is designated as index so it can find it's files -->
-{% assign media_url_prefix = "" %}
-{% if page.url == "/" %}
-    {% assign media_url_prefix = "/" | append: page.path | remove: "index.html" %}
+{% if site.baseurl == "" %}
+    {% assign media_url_prefix = append: page.path | remove: "index.html" %}
+{% else %}
+    {% assign media_url_prefix = site.baseurl | append: "/" | append: page.path | remove: "index.html" %}
 {% endif %}
 
 <!-- OVERRIDE STYLES -->
