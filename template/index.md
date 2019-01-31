@@ -10,6 +10,7 @@ profile_name: Jane Doe
 # and the profile will not show the icon for that site
 email: janedoe@gmail.com
 web: http://www.google.com
+instagram: janedoe
 twitter: janedoe
 facebook: janedoe
 linkedin: janedoe

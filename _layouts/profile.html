@@ -58,6 +58,11 @@ layout: master
                         {% include social/web.svg %}
                     </a>
                     {% endif %}
+                    {% if page.instagram %}
+                    <a href="https://www.instagram.com/{{ page.instagram }}">
+                        {% include social/instagram.svg %}
+                    </a>
+                    {% endif %}
                     {% if page.twitter %}
                     <a href="https://www.twitter.com/{{ page.twitter }}">
                         {% include social/twitter.svg %}
