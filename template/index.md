@@ -7,7 +7,7 @@
 # - If you don't want a background image and you just want a solid color, delete the file `background.jpg`. You can select the solid color as a background image below and pick one out here: https://htmlcolorcodes.com/ 
 # - Next in this `index.md` file, edit the fields by following the template below. This is what tells the site what to display. The comments should help you figure out what each entry is. Keep the formatting reasonably the same. i.e. replace "janedoe" with your username.
 # - Now replace the text starting with `## Making a TinyProfile is easy!` with a short blurb about you!
-    - You can use markdown to help with formatting if you want something a little extra
+#    - You can use markdown to help with formatting if you want something a little extra
 # - FINALLY, when you're happy, zip up the folder (right click > compress) and email the whole thing to tinyprofile@gmail.com
 
 # Do not update this line
