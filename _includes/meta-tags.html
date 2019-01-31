@@ -1,9 +1,20 @@
+{% if site.baseurl == "" %}
+    {% assign media_url_prefix = "/" | append: page.path | remove: "index.html" | remove: "index.md" %}
+{% else %}
+    {% assign media_url_prefix = site.baseurl | append: "/" | append: page.path | remove: "index.html" %}
+{% endif %}
+
 {% assign page_title = site.title %}
 {% if page.layout == "artwork" %}
     {% assign page_title = page.title | append: " / " | append: page.media | append: " / " | append: page.dimension | append: " / " | append: site.name | escape %}
 {% endif %}
 
-{% assign social_image = "" | append: site.url | append: page.url %}
+{% if page.url == "/" %}
+    {% assign social_image = media_url_prefix %}
+{% else %}
+    {% assign social_image = page.url %}
+{% endif %}
+
 {% if page.profile_image %}
     {% assign social_image = social_image | append: page.profile_image %}
 {% else %}
