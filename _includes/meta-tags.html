@@ -1,5 +1,5 @@
 {% if site.baseurl == "" %}
-    {% assign media_url_prefix = "/" | append: page.path | remove: "index.html" | remove: "index.md" %}
+    {% assign media_url_prefix = site.baseurl | append: "/" | append: page.path | remove: "index.html" | remove: "index.md" %}
 {% else %}
     {% assign media_url_prefix = site.baseurl | append: "/" | append: page.path | remove: "index.html" %}
 {% endif %}
