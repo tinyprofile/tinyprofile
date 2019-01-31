@@ -53,6 +53,11 @@ layout: master
                         {% include social/email.svg %}
                     </a>
                     {% endif %}
+                    {% if page.web %}
+                    <a href="{{ page.web }}">
+                        {% include social/web.svg %}
+                    </a>
+                    {% endif %}
                     {% if page.twitter %}
                     <a href="https://www.twitter.com/{{ page.twitter }}">
                         {% include social/twitter.svg %}

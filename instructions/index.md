@@ -1,16 +1,7 @@
 ---
 layout: profile
 
-profile_name: Instructions 
-email: janedoe@gmail.com
-twitter: janedoe
-facebook: janedoe
-linkedin: janedoe
-github: janedoe
-medium: janedoe
-behance: janedoe
-tumblr: janedoe
-youtube: janedoe
+profile_name: Make Your Own 
 
 seo_description: How-To instructions for making a TinyProfile
 

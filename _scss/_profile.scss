@@ -2,7 +2,6 @@
     background-color: white;
 
     .inner-wrapper {
-        min-width: 800px;
         max-width: 1000px;
         display: flex;
         margin: auto;
@@ -11,12 +10,12 @@
 
     .left-col {
         order: 0;
-        width: 33%;
+        width: 40%;
     }
 
     .right-col {
         order: 1;
-        width: 67%;
+        width: 60%;
     }
 
     .top-drawer, .bottom-drawer {
@@ -64,6 +63,15 @@
 
         a {
             margin-right: 5px;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            position: relative;
+
+            svg {
+                height: 100%;
+                width: 100%;
+            }
         }
 
         a:hover {
@@ -71,8 +79,12 @@
         }
     }
 
-    .aux-links {
-        margin-top: 20px;
+    .profile-description {
+        ul {
+            list-style: disc;
+            padding: 10px;
+            margin: 10px;
+        }
     }
 }
 

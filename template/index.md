@@ -5,12 +5,11 @@ layout: profile
 # Your name as you want it to appear on the profile
 profile_name: Template
 
-# Your public email address
-email: janedoe@gmail.com
-
 # The following social sites are all available for you to use
 # If you don't have, or wish to omit any of them, just delete the line
 # and the profile will not show the icon for that site
+email: janedoe@gmail.com
+web: http://www.google.com
 twitter: janedoe
 facebook: janedoe
 linkedin: janedoe
