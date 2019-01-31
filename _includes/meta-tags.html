@@ -1,4 +1,4 @@
-{% assign page_title = site.title %}
+{% assign page_title = page.profile_name %}
 {% if page.layout == "artwork" %}
     {% assign page_title = page.title | append: " / " | append: page.media | append: " / " | append: page.dimension | append: " / " | append: site.name | escape %}
 {% endif %}
