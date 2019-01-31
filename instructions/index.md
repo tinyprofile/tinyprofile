@@ -12,8 +12,8 @@ header_image: background.jpg
 
 ## Making a TinyProfile is easy!
 
-- Start by downloading the template Zip folder here: <a href="template.zip" download>Download</a>
+- Start by downloading the template Zip folder here: <a href="template.zip" download>template.zip</a>
 - Unzip the folder on your computer and take a look at the contents
-- Open `index.md` in a text editor. **DO NOT** use MS Word or Apple Pages. Try free programs like VisualCode, TextWrangler, or in a pinch: TextEdit.
+- Open `index.md` in a text editor. **DO NOT** use MS Word or Apple Pages. Try free programs like <a href="https://code.visualstudio.com" target="blank">Visual Studio Code</a> or in a pinch: TextEdit.
 - Follow the instructions in `index.md`
-- Email resulting Zip folder to tinyprofile@gmail.com and your TinyProfile will be added
+- Email resulting Zip folder to *tinyprofile@gmail.com* and your TinyProfile will be added

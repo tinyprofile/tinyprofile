@@ -3,7 +3,7 @@
 layout: profile
 
 # Your name as you want it to appear on the profile
-profile_name: Template
+profile_name: Jane Doe
 
 # The following social sites are all available for you to use
 # If you don't have, or wish to omit any of them, just delete the line
@@ -20,7 +20,7 @@ tumblr: janedoe
 youtube: janedoe
 
 # The text you want to appear when your tiny profile page is shared on social networks
-seo_description: TinyProfile Template
+seo_description: Jane Doe is a dog lover who lives in New York City
 
 # This sets the color for the top bar and text links
 primary_color: "#D81159"
@@ -28,7 +28,7 @@ primary_color: "#D81159"
 # The filename of your profile image
 avatar_image: profile.jpg
 
-# the filename of your background image. remove if you don't want one
+# the filename of your background image. delete this line if you don't want one
 header_image: background.jpg
 ---
 
