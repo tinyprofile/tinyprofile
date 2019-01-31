@@ -25,6 +25,9 @@ plugins:
 sass:
   sass_dir: ./_scss
 
+kramdown:  
+  parse_block_html: true
+
 compress_html:
   clippings: all
   comments: [""]
