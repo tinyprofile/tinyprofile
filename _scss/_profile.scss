@@ -80,10 +80,19 @@
     }
 
     .profile-description {
+        margin-bottom: 40px;
         ul {
             list-style: disc;
             padding: 10px;
             margin: 10px;
+        }
+    }
+
+    #qrcode {
+        display: none;
+
+        img {
+            margin: auto;
         }
     }
 }
@@ -150,6 +159,10 @@
             a:hover {
                 text-decoration: none;
             }
+        }
+
+        #qrcode {
+            display: inline;
         }
     }
 }

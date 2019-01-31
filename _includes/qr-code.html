@@ -1,0 +1,7 @@
+{% assign self_url = site.url | append: page.dir %}
+<div id="qrcode"></div>
+<script type="text/javascript">
+    window.onload = () => {
+        new QRCode(document.getElementById("qrcode"), "{{ self_url }}");
+    }
+</script>
