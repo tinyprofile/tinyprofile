@@ -16,7 +16,7 @@
 title: tinyprofile
 description: Tiny Profile Site
 baseurl: "" # the subpath of your site, e.g. /blog
-ga_id: UA-8761227-6
+ga_id:
 
 # Build settings
 markdown: kramdown
