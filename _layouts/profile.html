@@ -21,9 +21,19 @@ layout: master
         {% endif %}
     }
 
-    a:link, a:visited, a:hover, a:active {
+    .profile-description a:link:not(.btn),
+    .profile-description a:visited:not(.btn),
+    .profile-description a:hover:not(.btn),
+    .profile-description a:active:not(.btn) {
         {% if page.primary_color %}
         color: {{ page.primary_color }} !important;
+        {% endif %}
+    }
+
+    .btn {
+        {% if page.primary_color %}
+        background-color: {{ page.primary_color }} !important;
+        border-color: {{ page.primary_color }} !important;
         {% endif %}
     }
 </style>
